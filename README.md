@@ -1,3 +1,3 @@
 # codewars
-Solutions for codewars
+Solutions for codewars.
 Happy coding!
