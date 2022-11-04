@@ -1,0 +1,13 @@
+def generate_shape(n):
+    square = (n * '+' + '\n') * n
+    final = square.strip()
+    print(final)
+    return final
+
+    # need to return 'shape' - but in fact + on each line
+    # based on the parameter from 1 to 50
+    # first answer how can you make a single "+" - done
+    # n*n - number of total n's needed - done
+    # need to make n's to '+' - done
+    # then every nth you need to add \n - line break - done
+    # lastly we need to strip the final line break with strip
