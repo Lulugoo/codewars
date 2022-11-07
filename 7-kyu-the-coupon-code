@@ -1,0 +1,16 @@
+
+from dateutil import parser
+
+def check_coupon(entered_code, correct_code, current_date, expiration_date):
+    #print(f"{entered_code} {correct_code} {current_date} {expiration_date}") - to check where are the mistake on test
+    
+    cd = parser.parse(current_date)
+    ed = parser.parse(expiration_date)
+    
+    if str(entered_code) is str(correct_code) and cd<=ed: #got stuck on this one, but needed to change '==' to 'is', since in python 0 == False and 1 == True, thus I was getting this edge case error.
+        return True
+    return False
+    
+    #check coupon validity based on the expiry date - tough case to compare - done
+    #also valid coupon in terms of numbers - done
+    #thus two things must match ||
