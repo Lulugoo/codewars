@@ -1,0 +1,17 @@
+def sum_even_numbers(seq):
+    even = []
+    for num in seq:
+        if (num % 2) == 0:
+            even.append(num)
+        else:
+            continue
+    return sum(even)
+
+# first need to filter given list - since it is a list - we can loop yay! - done
+# get all even numbers without decimals - edge case - done
+# add all even numbers and return total amount as int - done
+
+
+#variation 2
+def sum_even_numbers(seq):
+    return sum(n for n in seq if not n % 2)
