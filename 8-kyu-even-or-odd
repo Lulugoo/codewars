@@ -1,0 +1,10 @@
+def even_or_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    return "Odd"
+
+    # given number return a string
+    # 'even'
+    # 'odd'
+    # accodingly to the number type
+    # % modulo operator - it returns the remainder of dividing the left hand operand by right hand operand. It's used to get the remainder of a division problem.
