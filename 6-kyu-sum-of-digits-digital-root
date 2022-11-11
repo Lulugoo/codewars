@@ -1,0 +1,15 @@
+def digital_root(n):
+    x = n
+
+    def reduce(x):
+        return sum(divmod(x, 10))
+
+    while x > 9:
+        x = reduce(x)
+    # print (x) # debugging
+    return x
+
+    # we basically need to sum all digit numbers
+    # continue doing it until the result will become 1 digit number
+    # initial input is non-negative int
+    # for this we will use divmod()
